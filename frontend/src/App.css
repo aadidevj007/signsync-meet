@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+}
+
+/* Global styles for the app */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+/* Smooth transitions for all interactive elements */
+button, input, select, textarea {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Custom styles for video elements */
+video {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Loading states */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Error states */
+.error {
+  border-color: #ef4444;
+  background-color: #fef2f2;
+}
+
+/* Success states */
+.success {
+  border-color: #10b981;
+  background-color: #f0fdf4;
+}
